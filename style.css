@@ -11,12 +11,12 @@
 
 #customers tr:nth-child(even){background-color: #FF0000;}
 
-#customers tr:hover {background-color: #a793e5;}
+#customers tr:hover {background-color: #FFA500;}
 
 #customers th {
   padding-top: 15px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #00FF00;
+  background-color: #0000FF;
   color: white;
 }
