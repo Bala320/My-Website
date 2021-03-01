@@ -1,9 +1,21 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
-                  <h1><p style="color:#FFFFFF">Student at VIT-AP University</p></h1>
-				  <title>My-Webpage</title>
+                  <div class="sticky"><h1><p style="color:#6f00ff">Student at VIT-AP University</p></h1></div>
+				  		  <title>My-Webpage</title>
 				  <style>
+					  div.sticky {
+                       position: -webkit-sticky;
+                       position: sticky;
+                       top: 0;
+                       background-color:#F0FFF0;
+                       padding: 1px;
+                       font-size: 13px;
+                                  }
+					 .sticky:hover
+					 {
+						background-color: #FFA07A;
+					 }
 					.button {
 					  background-color: #161748;
 					  border: none;
@@ -33,7 +45,7 @@
                        color: rgb(255, 0, 0);
 					  }
 					  .success:hover {
-                       background-color: #DC143C;
+                       background-color: #FF0000;
                        color: white;
 }
 
@@ -49,7 +61,7 @@
                       <img src="circle-cropped.png"> 
 
 					  <font size="+2">
-		<table border=1>
+		<table border=1 id="customers">
 			
         	<tr><th><font size="+2"><p style="color:#FFFFFF">Name</p></th><td><font size="+2"><p style="color:#FFFFFF">M. BALASUBRAMANIYAN</p></font></td></tr>
 			<tr><th><font size="+2"><p style="color:#FFFFFF">Alma Mater:</p></th><td><font size="+2"><p style="color:#FFFFFF">VIT-AP University</p></td></tr>
@@ -63,11 +75,18 @@
 		<a class="btn success" href="./projects.html"><font size="+3" face="candara" style="color: #ffffff;">Projects</font></a>
 		<a class="btn success" href="./contacts.html"><font size="+3" face="candara" style="color: #ffffff;">Contacts</font></a>
 		<a class="btn success" href="./about.html"><font size="+3" face="candara" style="color: #ffffff;">About Me</font></a>
-		
+		       <h1 style="color: #ff0000;">Sound Alert!!!!!!!</h1><h1 style="color: #FFFFFF;">-(Audio from a Movie)</h1>
                     <audio controls >
                     <source src="kabadi.mp3" type="audio/mpeg">
                     </audio>
-
+					<h2 style="color: #FFFFFF;">Form (Just fill your name)</h2>
+					<form action="/action.html">
+						<label for="fname" style="color: #FFFFFF;">First name:</label>
+						<input type="text" id="fname" name="fname"><br><br>
+						<label for="lname" style="color: #FFFFFF;">Last name:</label>
+						<input type="text" id="lname" name="lname"><br><br>
+						<input type="submit" value="Submit">
+					  </form>
 
 
                 
