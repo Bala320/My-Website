@@ -16,9 +16,9 @@
 						 border-radius: 25%;
 						 border: 5px solid rgb(255, 90, 90);
 						 width: 30%;
-						 min-width: 280px;  
+						 min-width: 200px;  
 						 display: flex;
-						 height: auto;                    
+						                   
 						 						 
 					 }
 					  div.sticky 
@@ -65,6 +65,7 @@
                         padding: 14px 16px;
                         text-decoration: none;
                         font-size: 17px;
+						justify-content: space-between;
                                 }
 
                      .navbar a:hover {
@@ -81,19 +82,49 @@
 
 					 .flex-container {
                           display: flex;
-                          background-color: DodgerBlue;
+				          align-items: flex-start;
+                          background-color: rgba(30, 143, 255, 0);
+						  flex-wrap: wrap;
                                       }
 
                         .box {
                            background-color: #f1f1f100;
                            margin: 10px;
-                           padding: 100px;
-                           font-size: 30px;
-                              } 
-							  .box:nth-child(2)
-                              {
-                            flex-grow: 8;
-                               }
+						   position: relative;
+						   margin-top: 30px;
+                           padding: 10px;
+                           font-size: 20px;						   
+                              }
+							  .box2
+							  {
+								  position: relative;
+								  right: 10px;
+							  }
+							  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
                         
 										  
 										
@@ -107,13 +138,21 @@
 	         background-size: cover;" class="img-fluid">
 		
 		    <div class="sticky" >
-			<h1 style="color:#6f00ff; font-family: 'Acme';font-size: 40px;">Bala Blog</h1>
+			<ul>
+				
+				<li><a href="about.html" style="font-family: 'Acle'; font-size: 20px;">About Me</a></li>
+				<li><a href="contacts.html" style="font-family: 'Acle'; font-size: 20px;">Contact</a></li>
+				<li><a href="projects.html" style="font-family: 'Acle'; font-size: 20px;">Projects</a></li>
+				<li><a href="index.html" style="font-family: 'Acle'; font-size: 20px;">Home</a></li>
+			  </ul>
+			  <h1 style="color:#6f00ff; font-family: 'Acme';font-size: 40px;">Bala Blog</h1>
 		    </div>
 
+
             <div class="flex-container">
-				<div class="box"> <img src="dp.jpeg" class="profilePic" >
+				<div class="box"><img src="dp.jpeg" style="width: 30%;" class="profilePic">
 				</div>
-				<div class="box"><h1 style="font-family: 'Quicksand'; color: #FFFFFF; font-size: 50px;">M.BALA SUBRAMANIYAN</h1><hr><hr>
+				<div class="box2 box"><h1 style="font-size: 40px; font-family: 'Acme'; color: #FFFFFF;">M. BALA SUBRAMANIYAN</h1>
 				</div>
 			</div>
 			<h3 style="color: #FFFFFF; font-size: 20px;">🏡Chennai, TAMILNADU.</h3>
