@@ -5,21 +5,29 @@
 				  		  <title>My-Webpage</title>
 							<meta charset="utf-8">
 							<meta name="viewport" content="width=device-width, initial-scale=1">
-							<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+							<link href='https://fonts.googleapis.com/css?family=Yeseva One' rel='stylesheet'>
 							<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 							<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 				  <style>
-					 
+					 html {
+  scroll-behavior: smooth;
+}
 					  .profilePic
 					 {
 						 border-radius: 25%;
 						 border: 5px solid rgb(255, 90, 90);
 						 width: 30%;
 						 min-width: 200px;  
-						 display: flex;
-						                   
-						 						 
+						 display: flex;	              		 
+					 }
+					 .bgi
+					 {
+		padding: 9%;
+    background-image: url("bg.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
 					 }
 					  div.sticky 
 					  {						                        
@@ -86,7 +94,14 @@
                           background-color: rgba(30, 143, 255, 0);
 						  flex-wrap: wrap;
                                       }
-
+									  .headings
+  {
+    text-align: center;
+    font-size:300%;
+    padding: 2%;
+    font-weight: bolder;
+    
+  }
                         .box {
                            background-color: #f1f1f100;
                            margin: 10px;
@@ -125,47 +140,84 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+#contact{
+          background-color: rgba(0, 0, 0, 0.9);
+          color:white;
+        }
                         
 										  
 										
 					</style>
                
 	</head> 
-	<body 
-	style="background-image: url('bg.PNG');
-	        background-repeat: no-repeat; 
-			background-attachment: fixed;
-	         background-size: cover;" class="img-fluid">
+	<body >
+
 		
 		    <div class="sticky" >
 			<ul>
-				
-				<li><a href="about.html" style="font-family: 'Acle'; font-size: 20px;">About Me</a></li>
-				<li><a href="contacts.html" style="font-family: 'Acle'; font-size: 20px;">Contact</a></li>
-				<li><a href="projects.html" style="font-family: 'Acle'; font-size: 20px;">Projects</a></li>
-				<li><a href="index.html" style="font-family: 'Acle'; font-size: 20px;">Home</a></li>
+				<li><a href="about.html" style="font-family: 'Acme'; font-size: 20px;">About Me</a></li>
+				<li><a href="contacts.html" style="font-family: 'Acme'; font-size: 20px;">Contact</a></li>
+				<li><a href="projects.html" style="font-family: 'Acme'; font-size: 20px;">Projects</a></li>
+				<li><a href="index.html" style="font-family: 'Acme'; font-size: 20px;">Home</a></li>
 			  </ul>
 			  <h1 style="color:#6f00ff; font-family: 'Acme';font-size: 40px;">Bala Blog</h1>
 		    </div>
 
 
-            <div class="flex-container">
-				<div class="box"><img src="dp.jpeg" style="width: 30%;" class="profilePic">
+			<section id="home">
+	<div class="bgi">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 ">
+					<img src="dp.jpeg" width="100%" class="img-responsive"style="border-radius: 20%; border: 5px solid rgb(255, 90, 90); "> 
+	            </div>
+				<div class="col-12 col-12 col-lg-8 ">
+					
+					<h1 style="font-size: 45px; font-family: 'Yeseva One'; color: #FFFFFF;">M. BALA SUBRAMANIYAN</h1><hr><hr>
+					<h2 style="color: #FFFFFF; font-size: 23px;">👋🏻 Hi There!! Bala here😉</h2>
+					<h2 style="color: #FFFFFF; font-size: 23px;">🏡Chennai, TAMILNADU.</h2>
+			<h2 style="color: #FFFFFF; font-size: 23px;" class="h3i">🎓Studying at VIT University, Amaravati.</h2>
+			<h2 style="color: #FFFFFF; font-size: 23px; font-family: Candara;">🎯Programmer-  <img src="java.png" width="6%"> <img src="python.PNG" width="6.5%"> <img src="html.PNG" width="26%"> <img src="R.PNG" width="7%">  <img src="mysql.png" width="10%"></h2>
+			<h2 style="color: #FFFFFF; font-size: 23px;" class="h3i">👉🏻 Checkout my profiles in <a href="https://www.hackerrank.com/bala_008"><img src="hacker.PNG" width="10%"></a>  <a href="https://leetcode.com/Bala008/"><img src="leet.jpeg" width="10%"></a></h2>
+				  </div>
+
+		  </div>
+		</div>
+	</div>
+			</section>
+
+			<section id="projects">
+				<h2 class="headings">My Projects</h2>
+				<div class="container">
+					<div class="row row-cols-2">
+					  <figure class="col-xs-12 col-sm-12 col-md-4 col-lg-4 "><a href="projects.html"><img class="img-thumbnail img-responsive" src="IMG-20191101-WA0021.jpg" width="200%" alt="image"></a> <figcaption> Auto-Water Level Controller</figcaption> </figure>
+					  <figure class="col-xs-12 col-sm-12 col-md-4 col-lg-4 "><a href="projects.html"><img class="img-thumbnail img-responsive" src="bg.PNG" width="200%" alt="image"></a> <figcaption> Tensorflow - Python (Face Detection)</figcaption> </figure>
+					  <figure class="col-xs-12 col-sm-12 col-md-4 col-lg-4 "><a href="https://bala320.github.io/GPA_Calulator/"><img class="img-thumbnail img-responsive" src="cal.PNG" width="200%" alt="image"> </a><figcaption>  CGPA and GPA Calculator  </figcaption> </figure>
+					  
+					</div>
+				  </div>
+			</section>
+
+			  <section id="contact">
+				<div class="container">
+					<div class="">
+				<h2 class="headings">Contact me on.</h2>
+				<div class="container">
+					<a href="https://github.com/Bala320" style="text-align: center; color: #FFFFFF;" class="headings">Github</a>
+					<a href="https://www.facebook.com/mspbbala/" style="text-align: center; color: #5272ff;" class="headings">Facebook</a>
+					<a href="https://twitter.com/MBalasu40954137" style="text-align: center; color: #87CEEB	;" class="headings">Twitter</a>
+					<a href="https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;to=mspb.bala@gmail.com" style="text-align: center; color: hsl(0, 100%, 60%);" class="headings">G-Mail</a>
+					<a href="https://www.instagram.com/bala_subramaniyan__/" style="text-align: center; color:  #FFC0CB;" class="headings">Instagram</a>
 				</div>
-				<div class="box2 box"><h1 style="font-size: 40px; font-family: 'Acme'; color: #FFFFFF;">M. BALA SUBRAMANIYAN</h1>
-				</div>
+				
 			</div>
-			<h3 style="color: #FFFFFF; font-size: 20px;">🏡Chennai, TAMILNADU.</h3>
-			<h3 style="color: #FFFFFF; font-size: 20px;" class="h3i">🎓Studying at VIT University, Amaravati.</h3>
-
-			
-
+			  </section>
 	
                               
 		   
 
 
-		<p class="para" id="food" style="color: #FFFFFF;">
+		<p class="para" id="food" style="color: #000000;">
 			Copyright &#169 2021 All rights reserved |Bala Subramaniyan|
 			<a href="https://github.com/Bala320" ><span class="idk" style="color :var(--primary-color)">Bala</span></a>
 		  </p>
